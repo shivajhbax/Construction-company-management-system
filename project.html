@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Projects</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="projects.css">
+        
+        
+        
+        
+    </head>
+    <body>
+        <div class="civilengineer-page">
+           <div class="heading">
+               <h1 style="color:#d8e4e9; padding: 8px; padding-left:545px; "><i>Enter Project Details  </i></h1>
+           
+        </div> 
+        <div class="projects-page">
+    <div class="form">
+        <form method="post" action="project.php" class="projects-page" id="form">
+          
+    <input type="text" name="id" placeholder="Project Id"><br><br>
+ <input type="text" name="name" placeholder="Project Name"><br><br>
+ <input type="text" name="cost" placeholder="Project Cost"><br><br>
+ <input type="text" name="mat" placeholder="Project Materials"><br><br>
+
+
+ <button type="submit" form="form" value="Submit">Insert</button>    
+            <p class="message">Already Registered?<a href="#">Update</a></p>
+            
+</form>
+        
+          
+            
+            
+        
+        <form method="post" action="projectupdate.php" class="register-form" id="form2">
+          
+    <input type="text" name="id" placeholder="Project Id"><br><br>
+    <input type="text" name="name" placeholder="Project Name"><br><br>
+    <input type="text" name="cost" placeholder="Project Cost"><br><br>
+    <input type="text" name="mat" placeholder="Project Materials"><br><br>
+     
+            
+<button type="submit" form="form2" value="Submit" >Update</button>
+            <p class="message">Not Registered? <a href="#">Insert</a></p>
+            
+</form>
+        
+             
+        
+
+         <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+        </script>
+        <script>
+            $('.message a').click(function(){
+            $('form').animate({height: "toggle",opacity: "toggle"},"linear");
+            });
+        </script>
+         
+        </div>
+    </div> 
+    </body>
+</html>
